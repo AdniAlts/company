@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="abubakaradni — independent cybersecurity testing and advisory.">
+    <title>abubakaradni — Cybersecurity Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none
+        }
+
+        .pg {
+            font-family: 'Schibsted Grotesk', system-ui, sans-serif;
+            background: #F5F6F4;
+            color: #111418;
+            line-height: 1.55
+        }
+
+        .wrap {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 28px
+        }
+
+        .mono {
+            font-family: 'JetBrains Mono', ui-monospace, monospace;
+            font-size: 12px;
+            letter-spacing: .06em;
+            text-transform: uppercase
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            min-height: 48px;
+            padding: 0 22px;
+            font-weight: 600;
+            font-size: 15px;
+            border: 1.5px solid #111418
+        }
+
+        .btn.p {
+            background: #111418;
+            color: #F5F6F4
+        }
+
+        .btn.p:hover {
+            background: #C2410C;
+            border-color: #C2410C
+        }
+
+        .btn.s:hover {
+            background: #111418;
+            color: #F5F6F4
+        }
+
+        .nav a.l:hover {
+            color: #C2410C
+        }
+
+        .fl a {
+            color: #AEB4BC
+        }
+
+        .fl a:hover {
+            color: #F5F6F4
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1.3fr 1fr;
+            gap: 56px;
+            align-items: start
+        }
+
+        .grid3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            border-top: 1.5px solid #111418
+        }
+
+        .grid3>div {
+            padding: 28px 28px 36px 0;
+            border-bottom: 1px solid #C9CCC8
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px
+        }
+
+        .two {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 56px
+        }
+
+        .foot {
+            display: grid;
+            grid-template-columns: 1.6fr 1fr 1fr 1.2fr;
+            gap: 40px
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            padding: 13px 0;
+            border-bottom: 1px solid #C9CCC8;
+            font-size: 15px
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            min-height: 48px;
+            padding: 12px 14px;
+            font: inherit;
+            background: #fff;
+            border: 1.5px solid #111418;
+            border-radius: 0;
+            color: #111418
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 6px
+        }
+
+        @media(max-width:900px) {
+
+            .hero,
+            .two {
+                grid-template-columns: 1fr;
+                gap: 36px
+            }
+
+            .grid3 {
+                grid-template-columns: 1fr 1fr
+            }
+
+            .steps {
+                grid-template-columns: 1fr 1fr
+            }
+
+            .foot {
+                grid-template-columns: 1fr 1fr
+            }
+
+            .nav .links {
+                display: none
+            }
+        }
+
+        @media(max-width:560px) {
+
+            .grid3,
+            .steps,
+            .foot {
+                grid-template-columns: 1fr
+            }
+
+            .h1 {
+                font-size: 40px !important
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pg">
+
+        <header class="nav" style="border-bottom:1px solid #C9CCC8">
+            <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;height:72px">
+                <a href="#top" style="font-weight:700;font-size:20px;letter-spacing:-.01em">abubakaradni<span
+                        style="color:#C2410C">.</span></a>
+                <nav class="links" style="display:flex;gap:32px;font-size:15px;font-weight:500">
+                    <a class="l" href="#about">About</a><a class="l" href="#services">Services</a><a class="l"
+                        href="#method">Method</a><a class="l" href="#deliverables">Deliverables</a><a class="l"
+                        href="#contact">Contact</a>
+                </nav>
+                <a class="btn p" href="#contact" style="min-height:42px;font-size:14px">Book a consultation</a>
+            </div>
+        </header>
+
+        <section id="top" style="padding:96px 0 88px">
+            <div class="wrap hero">
+                <div>
+                    <div class="mono" style="color:#C2410C;margin-bottom:24px">Cybersecurity consulting &amp; testing
+                    </div>
+                    <h1 class="h1"
+                        style="margin:0;font-size:64px;line-height:1.04;letter-spacing:-.025em;font-weight:700">Security
+                        that is tested, not just promised.</h1>
+                    <p style="margin:28px 0 0;font-size:19px;max-width:560px;color:#3E444B">abubakaradni helps
+                        organizations find weaknesses before attackers do, then close them with clear, verifiable steps.
+                    </p>
+                    <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:36px">
+                        <a class="btn p" href="#contact">Start with a consultation</a>
+                        <a class="btn s" href="#services">View services</a>
+                    </div>
+                </div>
+                <aside style="background:#fff;border:1.5px solid #111418;padding:28px">
+                    <div class="mono" style="color:#4A5058;margin-bottom:8px">Sample engagement summary</div>
+                    <div class="row"><span style="color:#4A5058">Scope</span><span
+                            style="font-weight:600;text-align:right">Web application &amp; API</span></div>
+                    <div class="row"><span style="color:#4A5058">Approach</span><span
+                            style="font-weight:600;text-align:right">Grey-box</span></div>
+                    <div class="row"><span style="color:#4A5058">Reference</span><span
+                            style="font-weight:600;text-align:right">OWASP ASVS</span></div>
+                    <div class="row"><span style="color:#4A5058">Findings</span><span
+                            style="font-weight:600;text-align:right">Ranked by risk level</span></div>
+                    <div class="row" style="border-bottom:0"><span style="color:#4A5058">Close-out</span><span
+                            style="font-weight:600;text-align:right">Retest after remediation</span></div>
+                </aside>
+            </div>
+        </section>
+
+        <section id="about" style="padding:88px 0;border-top:1px solid #C9CCC8">
+            <div class="wrap two">
+                <div>
+                    <div class="mono" style="color:#4A5058">01 — Company profile</div>
+                    <h2 style="margin:12px 0 20px;font-size:40px;line-height:1.12;letter-spacing:-.02em">An independent
+                        security firm, founded in 2025.</h2>
+                    <p style="margin:0 0 16px;font-size:18px;color:#3E444B">abubakaradni was founded in 2025 by security
+                        practitioners who were tired of reports that list problems without helping anyone fix them.</p>
+                    <p style="margin:0;font-size:18px;color:#3E444B">We work with startups, software teams, and growing
+                        companies across Indonesia and Southeast Asia, from first-time assessments to ongoing security
+                        partnerships.</p>
+                </div>
+                <div>
+                    <div class="row"><span style="color:#4A5058">Founded</span><span
+                            style="font-weight:600;text-align:right">2025</span></div>
+                    <div class="row"><span style="color:#4A5058">Focus</span><span
+                            style="font-weight:600;text-align:right">Offensive security &amp; advisory</span></div>
+                    <div class="row"><span style="color:#4A5058">Region</span><span
+                            style="font-weight:600;text-align:right">Indonesia &amp; Southeast Asia</span></div>
+                    <div class="row"><span style="color:#4A5058">Engagement</span><span
+                            style="font-weight:600;text-align:right">Project-based or retainer</span></div>
+                    <div class="row" style="border-bottom:0"><span style="color:#4A5058">Principle</span><span
+                            style="font-weight:600;text-align:right">Evidence over noise</span></div>
+                </div>
+            </div>
+            <div class="wrap" style="margin-top:56px">
+                <div class="grid3">
+                    <div>
+                        <div class="mono" style="color:#C2410C">Mission</div>
+                        <p style="margin:10px 0 0;color:#3E444B">Make serious security testing accessible to teams that
+                            cannot afford to learn from a breach.</p>
+                    </div>
+                    <div>
+                        <div class="mono" style="color:#C2410C">Independence</div>
+                        <p style="margin:10px 0 0;color:#3E444B">We sell no products and take no commissions, so our
+                            recommendations serve only your risk profile.</p>
+                    </div>
+                    <div>
+                        <div class="mono" style="color:#C2410C">Confidentiality</div>
+                        <p style="margin:10px 0 0;color:#3E444B">Every engagement starts with an NDA, and your data is
+                            handled and retained under agreed terms.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" style="padding:88px 0;border-top:1px solid #C9CCC8">
+            <div class="wrap">
+                <div class="mono" style="color:#4A5058">02 — Services</div>
+                <h2 style="margin:12px 0 48px;font-size:40px;line-height:1.12;letter-spacing:-.02em;max-width:640px">Six
+                    services, one goal: less risk for you.</h2>
+                <div class="grid3">
+                    <div>
+                        <div class="mono" style="color:#C2410C">01</div>
+                        <h3 style="margin:10px 0 8px;font-size:21px">Penetration Testing</h3>
+                        <p style="margin:0;color:#3E444B">Controlled attack simulations against web apps, mobile apps,
+                            APIs, and internal or external networks.</p>
+                    </div>
+                    <div>
+                        <div class="mono" style="color:#C2410C">02</div>
+                        <h3 style="margin:10px 0 8px;font-size:21px">Vulnerability Assessment</h3>
+                        <p style="margin:0;color:#3E444B">Scanning with manual validation to map weaknesses across your
+                            assets on a regular schedule.</p>
+                    </div>
+                    <div>
+                        <div class="mono" style="color:#C2410C">03</div>
+                        <h3 style="margin:10px 0 8px;font-size:21px">Security Code Review</h3>
+                        <p style="margin:0;color:#3E444B">Source code review to catch logic flaws and insecure practices
+                            early in development.</p>
+                    </div>
+                    <div>
+                        <div class="mono" style="color:#C2410C">04</div>
+                        <h3 style="margin:10px 0 8px;font-size:21px">Cloud &amp; Infrastructure Review</h3>
+                        <p style="margin:0;color:#3E444B">Audits of cloud configuration, access rights, and network
+                            segmentation against best practice.</p>
+                    </div>
+                    <div>
+                        <div class="mono" style="color:#C2410C">05</div>
+                        <h3 style="margin:10px 0 8px;font-size:21px">Incident Response</h3>
+                        <p style="margin:0;color:#3E444B">Support during an incident: containment, investigation,
+                            recovery, and lessons learned afterwards.</p>
+                    </div>
+                    <div>
+                        <div class="mono" style="color:#C2410C">06</div>
+                        <h3 style="margin:10px 0 8px;font-size:21px">Advisory &amp; Compliance</h3>
+                        <p style="margin:0;color:#3E444B">Policy drafting, security awareness training, and preparation
+                            for ISO 27001 or related regulations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="method" style="background:#111418;color:#F5F6F4;padding:88px 0">
+            <div class="wrap">
+                <div class="mono" style="color:#AEB4BC">03 — Method</div>
+                <h2 style="margin:12px 0 48px;font-size:40px;line-height:1.12;letter-spacing:-.02em;max-width:640px">A
+                    transparent process from start to finish.</h2>
+                <div class="steps">
+                    <div style="border-top:1.5px solid #F5F6F4;padding-top:20px">
+                        <div class="mono" style="color:#F08A5D">Step 1</div>
+                        <h3 style="margin:10px 0 8px;font-size:20px">Scoping</h3>
+                        <p style="margin:0;color:#AEB4BC">We agree on assets, boundaries, schedule, and rules of
+                            engagement with you in writing.</p>
+                    </div>
+                    <div style="border-top:1.5px solid #F5F6F4;padding-top:20px">
+                        <div class="mono" style="color:#F08A5D">Step 2</div>
+                        <h3 style="margin:10px 0 8px;font-size:20px">Testing</h3>
+                        <p style="margin:0;color:#AEB4BC">Manual and automated execution, with fast communication
+                            whenever a critical issue appears.</p>
+                    </div>
+                    <div style="border-top:1.5px solid #F5F6F4;padding-top:20px">
+                        <div class="mono" style="color:#F08A5D">Step 3</div>
+                        <h3 style="margin:10px 0 8px;font-size:20px">Reporting</h3>
+                        <p style="margin:0;color:#AEB4BC">Evidence, business impact, and remediation guidance your team
+                            can act on right away.</p>
+                    </div>
+                    <div style="border-top:1.5px solid #F5F6F4;padding-top:20px">
+                        <div class="mono" style="color:#F08A5D">Step 4</div>
+                        <h3 style="margin:10px 0 8px;font-size:20px">Verification</h3>
+                        <p style="margin:0;color:#AEB4BC">A retest after fixes to confirm the weaknesses are actually
+                            closed.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="deliverables" style="padding:88px 0">
+            <div class="wrap two">
+                <div>
+                    <div class="mono" style="color:#4A5058">04 — Deliverables</div>
+                    <h2 style="margin:12px 0 20px;font-size:40px;line-height:1.12;letter-spacing:-.02em">Reports
+                        engineers can use and executives can follow.</h2>
+                    <p style="margin:0;font-size:18px;color:#3E444B">Every engagement ends with a document you can act
+                        on, not a pile of scanner output.</p>
+                </div>
+                <div>
+                    <div class="row"><span style="font-weight:600">Executive summary</span><span
+                            style="color:#4A5058;text-align:right">Risk in business language</span></div>
+                    <div class="row"><span style="font-weight:600">Technical detail</span><span
+                            style="color:#4A5058;text-align:right">Reproduction steps &amp; evidence</span></div>
+                    <div class="row"><span style="font-weight:600">Risk ratings</span><span
+                            style="color:#4A5058;text-align:right">CVSS scores &amp; priorities</span></div>
+                    <div class="row"><span style="font-weight:600">Recommendations</span><span
+                            style="color:#4A5058;text-align:right">Concrete fix for each finding</span></div>
+                    <div class="row"><span style="font-weight:600">Walkthrough session</span><span
+                            style="color:#4A5058;text-align:right">Live discussion with your team</span></div>
+                    <div class="row"><span style="font-weight:600">Confidentiality</span><span
+                            style="color:#4A5058;text-align:right">NDA signed before work begins</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" style="padding:88px 0 96px;border-top:1.5px solid #111418">
+            <div class="wrap two">
+                <div>
+                    <div class="mono" style="color:#C2410C">05 — Contact</div>
+                    <h2 style="margin:12px 0 20px;font-size:40px;line-height:1.12;letter-spacing:-.02em">Tell us what
+                        needs protecting.</h2>
+                    <p style="margin:0 0 28px;font-size:18px;color:#3E444B">The initial consultation is free. We reply
+                        within one business day.</p>
+                    <div style="font-size:16px;line-height:2">
+                        <div><span style="color:#4A5058">Email</span> &nbsp; [founder@abubakaradni.me]</div>
+                        <div><span style="color:#4A5058">Phone</span> &nbsp; [+62 813 4669 8998]</div>
+                    </div>
+                </div>
+                <div style="display:grid;gap:18px">
+                    <div><label for="n">Name</label><input id="n" type="text" placeholder="Full name"></div>
+                    <div><label for="e">Work email</label><input id="e" type="email" placeholder="name@company.com">
+                    </div>
+                    <div><label for="s">What do you need?</label><select id="s">
+                            <option>Penetration Testing</option>
+                            <option>Vulnerability Assessment</option>
+                            <option>Security Code Review</option>
+                            <option>Cloud &amp; Infrastructure Review</option>
+                            <option>Incident Response</option>
+                            <option>Advisory &amp; Compliance</option>
+                        </select></div>
+                    <div><label for="m">Message</label><textarea id="m" rows="4"
+                            placeholder="Briefly describe your system or problem"></textarea></div>
+                    <button class="btn p" type="button"
+                        style="justify-content:center;cursor:pointer;font-family:inherit">Send request</button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="fl" style="background:#111418;color:#AEB4BC;padding:64px 0 28px;font-size:15px">
+            <div class="wrap">
+                <div class="foot">
+                    <div>
+                        <div style="color:#F5F6F4;font-weight:700;font-size:20px">abubakaradni<span
+                                style="color:#F08A5D">.</span></div>
+                        <p style="margin:12px 0 0;max-width:300px">Independent cybersecurity testing and advisory.
+                            Founded in 2025.</p>
+                    </div>
+                    <div>
+                        <div class="mono" style="color:#F5F6F4;margin-bottom:14px">Services</div>
+                        <div style="display:grid;gap:8px"><a href="#services">Penetration Testing</a><a
+                                href="#services">Vulnerability Assessment</a><a href="#services">Security Code
+                                Review</a><a href="#services">Incident Response</a></div>
+                    </div>
+                    <div>
+                        <div class="mono" style="color:#F5F6F4;margin-bottom:14px">Company</div>
+                        <div style="display:grid;gap:8px"><a href="#about">About</a><a href="#method">Method</a><a
+                                href="#deliverables">Deliverables</a><a href="#contact">Contact</a></div>
+                    </div>
+                    <div>
+                        <div class="mono" style="color:#F5F6F4;margin-bottom:14px">Get in touch</div>
+                        <div style="display:grid;gap:8px"><span>[founder@abubakaradni.me]</span><span>[+62 813 4669
+                                8998]</span></div>
+                    </div>
+                </div>
+                <div
+                    style="margin-top:48px;padding-top:20px;border-top:1px solid #343A42;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:14px">
+                    <span>© 2026 abubakaradni. All rights reserved.</span><span style="display:flex;gap:24px"><a
+                            href="#top">Privacy Policy</a><a href="#top">Terms of Service</a></span>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
